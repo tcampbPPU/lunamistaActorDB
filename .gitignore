@@ -1,0 +1,5 @@
+# ignore pkgs installed by npm
+node_modules
+
+# for Mac Os
+.DS_Store 
