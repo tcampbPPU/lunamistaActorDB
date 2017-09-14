@@ -21,12 +21,20 @@ var fortuneCookies = [
 	"Whenever possible, keep it simple.",
 ];
 
+// var date = new Date();
+// console.log(date);
 
 // Render looks in views for file name in extenstion
 
 // Root Dir
 app.get('/', function(req, res) {
   res.render('home');
+});
+
+// Date Dir
+app.get('/datetime', function(req, res) {
+  var date = new Date();
+  res.render('datetime', { datetime: date});
 });
 
 // About Dir
