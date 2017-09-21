@@ -30,7 +30,7 @@ app.get('/search', function(req, res) {
 });
 
 // List of previous Search Querys
-app.get('list', function(req, res) {
+app.get('/list', function(req, res) {
   res.render('list');
 });
 
